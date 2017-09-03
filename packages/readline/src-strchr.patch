@@ -1,0 +1,13 @@
+diff -u -r ../readline-7.0/histlib.h ./histlib.h
+--- ../readline-7.0/histlib.h	2016-04-22 09:03:20.000000000 -0600
++++ ./histlib.h	2017-09-03 12:32:52.102072575 -0600
+@@ -51,9 +51,6 @@
+ #endif
+ 
+ #ifndef member
+-#  ifndef strchr
+-extern char *strchr ();
+-#  endif
+ #define member(c, s) ((c) ? ((char *)strchr ((s), (c)) != (char *)NULL) : 0)
+ #endif
+ 
