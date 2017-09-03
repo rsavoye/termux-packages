@@ -1,0 +1,10 @@
+--- ../gdal-2.2.0/port/cpl_port.h	2017-04-28 10:07:33.000000000 -0600
++++ ./port/cpl_port.h	2017-09-03 12:54:28.525713800 -0600
+@@ -1115,7 +1115,6 @@
+     CPL_PRINT_FUNC_FORMAT(2, 3)
+     CPL_WARN_DEPRECATED("Use CPLsnprintf() instead");
+ #  elif defined(GDAL_COMPILATION) && !defined(DONT_DEPRECATE_SPRINTF)
+-int sprintf(char *str, const char* fmt, ...)
+     CPL_PRINT_FUNC_FORMAT(2, 3)
+     CPL_WARN_DEPRECATED("Use snprintf() or CPLsnprintf() instead");
+ #  endif /* defined(GDAL_COMPILATION) && defined(WARN_STANDARD_PRINTF) */
